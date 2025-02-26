@@ -14,6 +14,7 @@
 -All components share MongoDB for state
 
 **Stages**
+
 When you start the system using docker-compose up, several things will happen in sequence:
 1.First Stage - Infrastructure Setup:
 
@@ -69,7 +70,7 @@ View task monitoring data
 
 **Expected Output Examples:**
 When you call the API for a specific tenant (e.g., http://localhost:8080/tasks/039228b4-1080-4e8e-9aa5-b16c21184b0c), you'll see output like:
-Copy039228b4-1080-4e8e-9aa5-b16c21184b0c > cloud scan
+039228b4-1080-4e8e-9aa5-b16c21184b0c > cloud scan
 * next scheduled at : 2025.02.15 T 13:00
 * previous task done : 2025.02.01 T 13:00 > status: DONE
 * previous task done : 2025.02.01 T 12:00 > status: ERROR
@@ -117,5 +118,7 @@ Data Consistency:
 
 Check that timestamps are in UTC
 Verify that task status colors are displaying correctly
-Confirm that task history is being recorded properly# cloud-monitor
-# cloud-monitor
+Confirm that task history is being recorded properly
+
+
+
