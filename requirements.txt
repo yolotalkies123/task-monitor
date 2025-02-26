@@ -1,0 +1,13 @@
+# requirements.txt
+fastapi==0.95.0
+uvicorn==0.15.0
+apscheduler==3.8.1
+python-json-logger==2.0.2
+tenacity==8.0.1
+pytz==2021.3
+pydantic==1.8.2
+kafka-python>=2.0.0
+pymongo>=4.0.0
+six>=1.16.0
+nest_asyncio==1.5.4
+python-dotenv

@@ -1,0 +1,128 @@
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-11T07:56:24.698437", "level": "INFO", "correlation_id": null}
+{"message": "Application error: NoBrokersAvailable", "exc_info": "Traceback (most recent call last):\n  File \"/app/main.py\", line 102, in run_application\n    scheduler = CloudTaskScheduler(app_manager.config)\n  File \"/app/core/scheduler.py\", line 20, in __init__\n    self.kafka_producer = KafkaProducer(\n  File \"/usr/local/lib/python3.9/site-packages/kafka/producer/kafka.py\", line 381, in __init__\n    client = KafkaClient(metrics=self._metrics, metric_group_prefix='producer',\n  File \"/usr/local/lib/python3.9/site-packages/kafka/client_async.py\", line 244, in __init__\n    self.config['api_version'] = self.check_version(timeout=check_timeout)\n  File \"/usr/local/lib/python3.9/site-packages/kafka/client_async.py\", line 900, in check_version\n    raise Errors.NoBrokersAvailable()\nkafka.errors.NoBrokersAvailable: NoBrokersAvailable", "timestamp": "2025-02-11T07:56:24.764326", "level": "ERROR", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-11T07:59:36.990040", "level": "INFO", "correlation_id": null}
+{"message": "Waiting for Kafka to become available...", "timestamp": "2025-02-11T07:59:36.991290", "level": "INFO", "correlation_id": null}
+{"message": "Kafka not available (attempt 1/30). Retrying in 2 seconds...", "timestamp": "2025-02-11T07:59:37.063867", "level": "WARNING", "correlation_id": null}
+{"message": "Kafka not available (attempt 2/30). Retrying in 2 seconds...", "timestamp": "2025-02-11T07:59:39.099395", "level": "WARNING", "correlation_id": null}
+{"message": "Kafka not available (attempt 3/30). Retrying in 2 seconds...", "timestamp": "2025-02-11T07:59:41.160879", "level": "WARNING", "correlation_id": null}
+{"message": "Kafka not available (attempt 4/30). Retrying in 2 seconds...", "timestamp": "2025-02-11T07:59:43.225267", "level": "WARNING", "correlation_id": null}
+{"message": "Successfully connected to Kafka", "timestamp": "2025-02-11T07:59:45.397860", "level": "INFO", "correlation_id": null}
+{"message": "API server started successfully", "timestamp": "2025-02-11T07:59:45.549724", "level": "INFO", "correlation_id": null}
+{"message": "Scheduler error: Only pytz timezones are supported (need the localize() and normalize() methods)", "timestamp": "2025-02-11T07:59:45.554662", "level": "ERROR", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-11T07:59:45.558732", "level": "INFO", "correlation_id": null}
+{"message": "Initiating application shutdown", "timestamp": "2025-02-11T07:59:45.562474", "level": "INFO", "correlation_id": null}
+{"message": "Application error: run() got an unexpected keyword argument 'shutdown_event'", "exc_info": "Traceback (most recent call last):\n  File \"/app/main.py\", line 155, in run_application\n    await app_manager.consumer.run(shutdown_event=app_manager.shutdown_event)\nTypeError: run() got an unexpected keyword argument 'shutdown_event'", "timestamp": "2025-02-11T07:59:45.564147", "level": "ERROR", "correlation_id": null}
+{"message": "Cleaning up consumer...", "timestamp": "2025-02-11T07:59:45.565762", "level": "INFO", "correlation_id": null}
+{"message": "Error during cleanup: 'TaskConsumer' object has no attribute 'cleanup'", "timestamp": "2025-02-11T07:59:45.568927", "level": "ERROR", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-11T08:00:34.361911", "level": "INFO", "correlation_id": null}
+{"message": "Waiting for Kafka to become available...", "timestamp": "2025-02-11T08:00:34.363428", "level": "INFO", "correlation_id": null}
+{"message": "Successfully connected to Kafka", "timestamp": "2025-02-11T08:00:34.494728", "level": "INFO", "correlation_id": null}
+{"message": "API server started successfully", "timestamp": "2025-02-11T08:00:34.623704", "level": "INFO", "correlation_id": null}
+{"message": "Scheduler error: Only pytz timezones are supported (need the localize() and normalize() methods)", "timestamp": "2025-02-11T08:00:34.625556", "level": "ERROR", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-11T08:00:34.630194", "level": "INFO", "correlation_id": null}
+{"message": "Initiating application shutdown", "timestamp": "2025-02-11T08:00:34.634632", "level": "INFO", "correlation_id": null}
+{"message": "Application error: run() got an unexpected keyword argument 'shutdown_event'", "exc_info": "Traceback (most recent call last):\n  File \"/app/main.py\", line 155, in run_application\n    await app_manager.consumer.run(shutdown_event=app_manager.shutdown_event)\nTypeError: run() got an unexpected keyword argument 'shutdown_event'", "timestamp": "2025-02-11T08:00:34.639388", "level": "ERROR", "correlation_id": null}
+{"message": "Cleaning up consumer...", "timestamp": "2025-02-11T08:00:34.640726", "level": "INFO", "correlation_id": null}
+{"message": "Error during cleanup: 'TaskConsumer' object has no attribute 'cleanup'", "timestamp": "2025-02-11T08:00:34.641829", "level": "ERROR", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-11T08:09:55.696202", "level": "INFO", "correlation_id": null}
+{"message": "Application error: 'ApplicationManager' object has no attribute 'initialize_components'", "exc_info": "Traceback (most recent call last):\n  File \"/app/main.py\", line 162, in run_application\n    if not await app_manager.initialize_components():\nAttributeError: 'ApplicationManager' object has no attribute 'initialize_components'", "timestamp": "2025-02-11T08:09:55.698142", "level": "ERROR", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-11T08:13:26.416975", "level": "INFO", "correlation_id": null}
+{"message": "Waiting for Kafka to become available at ['kafka:29092']...", "timestamp": "2025-02-11T08:13:26.418631", "level": "INFO", "correlation_id": null}
+{"message": "Successfully connected to Kafka at ['kafka:29092']", "timestamp": "2025-02-11T08:13:26.548004", "level": "INFO", "correlation_id": null}
+{"message": "API server started successfully", "timestamp": "2025-02-11T08:13:26.666605", "level": "INFO", "correlation_id": null}
+{"message": "Scheduler error: Only pytz timezones are supported (need the localize() and normalize() methods)", "timestamp": "2025-02-11T08:13:26.668802", "level": "ERROR", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-11T08:13:26.671101", "level": "INFO", "correlation_id": null}
+{"message": "Initiating application shutdown", "timestamp": "2025-02-11T08:13:26.673504", "level": "INFO", "correlation_id": null}
+{"message": "Application error: run() got an unexpected keyword argument 'shutdown_event'", "exc_info": "Traceback (most recent call last):\n  File \"/app/main.py\", line 200, in run_application\n    await app_manager.consumer.run(shutdown_event=app_manager.shutdown_event)\nTypeError: run() got an unexpected keyword argument 'shutdown_event'", "timestamp": "2025-02-11T08:13:26.674799", "level": "ERROR", "correlation_id": null}
+{"message": "Cleaning up consumer...", "timestamp": "2025-02-11T08:13:26.675756", "level": "INFO", "correlation_id": null}
+{"message": "Error during cleanup: 'TaskConsumer' object has no attribute 'cleanup'", "timestamp": "2025-02-11T08:13:26.677197", "level": "ERROR", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-11T08:17:37.794679", "level": "INFO", "correlation_id": null}
+{"message": "Waiting for Kafka to become available at ['kafka:29092']...", "timestamp": "2025-02-11T08:17:37.796164", "level": "INFO", "correlation_id": null}
+{"message": "Successfully connected to Kafka at ['kafka:29092']", "timestamp": "2025-02-11T08:17:37.933306", "level": "INFO", "correlation_id": null}
+{"message": "API server started successfully", "timestamp": "2025-02-11T08:17:38.055943", "level": "INFO", "correlation_id": null}
+{"message": "Scheduler error: Only pytz timezones are supported (need the localize() and normalize() methods)", "timestamp": "2025-02-11T08:17:38.060158", "level": "ERROR", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-11T08:17:38.062939", "level": "INFO", "correlation_id": null}
+{"message": "Initiating application shutdown", "timestamp": "2025-02-11T08:17:38.065160", "level": "INFO", "correlation_id": null}
+{"message": "Application error: run() got an unexpected keyword argument 'shutdown_event'", "exc_info": "Traceback (most recent call last):\n  File \"/app/main.py\", line 200, in run_application\n    await app_manager.consumer.run(shutdown_event=app_manager.shutdown_event)\nTypeError: run() got an unexpected keyword argument 'shutdown_event'", "timestamp": "2025-02-11T08:17:38.066561", "level": "ERROR", "correlation_id": null}
+{"message": "Cleaning up consumer...", "timestamp": "2025-02-11T08:17:38.067731", "level": "INFO", "correlation_id": null}
+{"message": "Error during cleanup: 'TaskConsumer' object has no attribute 'cleanup'", "timestamp": "2025-02-11T08:17:38.070102", "level": "ERROR", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-11T08:20:50.155352", "level": "INFO", "correlation_id": null}
+{"message": "Waiting for Kafka to become available at ['kafka:29092']...", "timestamp": "2025-02-11T08:20:50.156841", "level": "INFO", "correlation_id": null}
+{"message": "Successfully connected to Kafka at ['kafka:29092']", "timestamp": "2025-02-11T08:20:50.290717", "level": "INFO", "correlation_id": null}
+{"message": "API server started successfully", "timestamp": "2025-02-11T08:20:50.410931", "level": "INFO", "correlation_id": null}
+{"message": "Scheduler error: Only pytz timezones are supported (need the localize() and normalize() methods)", "timestamp": "2025-02-11T08:20:50.414851", "level": "ERROR", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-11T08:20:50.416841", "level": "INFO", "correlation_id": null}
+{"message": "Initiating application shutdown", "timestamp": "2025-02-11T08:20:50.418984", "level": "INFO", "correlation_id": null}
+{"message": "Application error: run() got an unexpected keyword argument 'shutdown_event'", "exc_info": "Traceback (most recent call last):\n  File \"/app/main.py\", line 200, in run_application\n    await app_manager.consumer.run(shutdown_event=app_manager.shutdown_event)\nTypeError: run() got an unexpected keyword argument 'shutdown_event'", "timestamp": "2025-02-11T08:20:50.421645", "level": "ERROR", "correlation_id": null}
+{"message": "Cleaning up consumer...", "timestamp": "2025-02-11T08:20:50.424110", "level": "INFO", "correlation_id": null}
+{"message": "Error during cleanup: 'TaskConsumer' object has no attribute 'cleanup'", "timestamp": "2025-02-11T08:20:50.426790", "level": "ERROR", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-12T03:39:37.115126", "level": "INFO", "correlation_id": null}
+{"message": "Waiting for Kafka to become available at ['kafka:29092']...", "timestamp": "2025-02-12T03:39:37.118371", "level": "INFO", "correlation_id": null}
+{"message": "Successfully connected to Kafka at ['kafka:29092']", "timestamp": "2025-02-12T03:39:37.252815", "level": "INFO", "correlation_id": null}
+{"message": "API server started successfully", "timestamp": "2025-02-12T03:39:37.357585", "level": "INFO", "correlation_id": null}
+{"message": "Scheduler error: Only pytz timezones are supported (need the localize() and normalize() methods)", "timestamp": "2025-02-12T03:39:37.360733", "level": "ERROR", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-12T03:39:37.363712", "level": "INFO", "correlation_id": null}
+{"message": "Initiating application shutdown", "timestamp": "2025-02-12T03:39:37.366593", "level": "INFO", "correlation_id": null}
+{"message": "Application error: run() got an unexpected keyword argument 'shutdown_event'", "exc_info": "Traceback (most recent call last):\n  File \"/app/main.py\", line 200, in run_application\n    await app_manager.consumer.run(shutdown_event=app_manager.shutdown_event)\nTypeError: run() got an unexpected keyword argument 'shutdown_event'", "timestamp": "2025-02-12T03:39:37.368870", "level": "ERROR", "correlation_id": null}
+{"message": "Cleaning up consumer...", "timestamp": "2025-02-12T03:39:37.372983", "level": "INFO", "correlation_id": null}
+{"message": "Error during cleanup: 'TaskConsumer' object has no attribute 'cleanup'", "timestamp": "2025-02-12T03:39:37.376498", "level": "ERROR", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-12T04:00:34.258849", "level": "INFO", "correlation_id": null}
+{"message": "Waiting for Kafka to become available at ['kafka:29092']...", "timestamp": "2025-02-12T04:00:34.261524", "level": "INFO", "correlation_id": null}
+{"message": "Successfully connected to Kafka at ['kafka:29092']", "timestamp": "2025-02-12T04:00:34.388602", "level": "INFO", "correlation_id": null}
+{"message": "API server started successfully", "timestamp": "2025-02-12T04:00:34.514093", "level": "INFO", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-12T04:00:34.518126", "level": "INFO", "correlation_id": null}
+{"message": "Scheduler error: There is no current event loop in thread 'SchedulerThread'.", "timestamp": "2025-02-12T04:00:34.521653", "level": "ERROR", "correlation_id": null}
+{"message": "Application error: run() got an unexpected keyword argument 'shutdown_event'", "exc_info": "Traceback (most recent call last):\n  File \"/app/main.py\", line 200, in run_application\n    await app_manager.consumer.run(shutdown_event=app_manager.shutdown_event)\nTypeError: run() got an unexpected keyword argument 'shutdown_event'", "timestamp": "2025-02-12T04:00:34.523670", "level": "ERROR", "correlation_id": null}
+{"message": "Initiating application shutdown", "timestamp": "2025-02-12T04:00:34.526369", "level": "INFO", "correlation_id": null}
+{"message": "Stopping scheduler...", "timestamp": "2025-02-12T04:00:34.528253", "level": "INFO", "correlation_id": null}
+{"message": "Cleaning up consumer...", "timestamp": "2025-02-12T04:00:34.534573", "level": "INFO", "correlation_id": null}
+{"message": "Cleanup completed successfully", "timestamp": "2025-02-12T04:00:34.538294", "level": "INFO", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-12T04:06:38.841423", "level": "INFO", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-12T04:06:39.007852", "level": "INFO", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-12T04:28:48.757389", "level": "INFO", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-12T04:28:48.975400", "level": "INFO", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-12T05:13:07.861520", "level": "INFO", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-12T05:13:08.035843", "level": "INFO", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-12T05:34:38.585208", "level": "INFO", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-12T05:34:38.797854", "level": "INFO", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-12T05:56:48.174356", "level": "INFO", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-12T05:56:48.399035", "level": "INFO", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-12T09:28:00.714189", "level": "INFO", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-12T09:28:00.913411", "level": "INFO", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-12T09:44:19.655279", "level": "INFO", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-12T09:44:19.882766", "level": "INFO", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-12T09:56:40.077588", "level": "INFO", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-12T09:56:40.267621", "level": "INFO", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-13T01:22:32.294318", "level": "INFO", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-13T01:22:32.578748", "level": "INFO", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-13T02:19:11.227855", "level": "INFO", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-13T02:19:11.419745", "level": "INFO", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-13T02:20:49.389341", "level": "INFO", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-13T02:20:49.586102", "level": "INFO", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-13T02:41:24.816276", "level": "INFO", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-13T02:41:25.006378", "level": "INFO", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-13T02:50:07.928862", "level": "INFO", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-13T02:50:08.125434", "level": "INFO", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-13T02:58:52.534951", "level": "INFO", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-13T02:58:52.719620", "level": "INFO", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-13T04:18:48.025005", "level": "INFO", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-13T04:18:48.247311", "level": "INFO", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-13T04:22:39.404104", "level": "INFO", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-13T04:22:39.603302", "level": "INFO", "correlation_id": null}
+{"message": "Initializing Cloud Task Monitoring System", "timestamp": "2025-02-14T05:36:07.047139", "level": "INFO", "correlation_id": null}
+{"message": "Task scheduler started successfully", "timestamp": "2025-02-14T05:36:07.239994", "level": "INFO", "correlation_id": null}
+{"asctime": "2025-02-14 09:30:55,822", "levelname": "INFO", "name": "cloud-monitor", "message": "Initializing Cloud Task Monitoring System", "startup_time": "2025.02.14 T 09:30", "timestamp": "2025.02.14 T 09:30", "level": "INFO", "correlation_id": null}
+{"asctime": "2025-02-14 09:30:55,983", "levelname": "ERROR", "name": "cloud-monitor", "message": "Application error: 'TaskConsumer' object has no attribute 'run'", "exc_info": "Traceback (most recent call last):\n  File \"/app/main.py\", line 171, in run_application\n    await app_manager.consumer.run()\nAttributeError: 'TaskConsumer' object has no attribute 'run'", "error_time": "2025.02.14 T 09:30", "timestamp": "2025.02.14 T 09:30", "level": "ERROR", "correlation_id": null}
+{"asctime": "2025-02-14 09:30:55,991", "levelname": "INFO", "name": "cloud-monitor", "message": "Cleaning up consumer...", "timestamp": "2025.02.14 T 09:30", "level": "INFO", "correlation_id": null}
+{"asctime": "2025-02-14 09:30:55,994", "levelname": "INFO", "name": "cloud-monitor", "message": "Cleanup completed successfully", "shutdown_time": "2025.02.14 T 09:30", "timestamp": "2025.02.14 T 09:30", "level": "INFO", "correlation_id": null}
+{"asctime": "2025-02-14 09:30:55,995", "levelname": "ERROR", "name": "cloud-monitor", "message": "Failed to start scheduler: 'CloudTaskScheduler' object has no attribute 'start'", "exc_info": "Traceback (most recent call last):\n  File \"/app/main.py\", line 87, in setup_scheduler\n    self.scheduler.start()\nAttributeError: 'CloudTaskScheduler' object has no attribute 'start'", "component": "scheduler", "timestamp": "2025.02.14 T 09:30", "level": "ERROR", "correlation_id": null}
+{"asctime": "2025-02-14 09:34:19,166", "levelname": "INFO", "name": "cloud-monitor", "message": "Initializing Cloud Task Monitoring System", "startup_time": "2025.02.14 T 09:34", "timestamp": "2025.02.14 T 09:34", "level": "INFO", "correlation_id": null}
+{"asctime": "2025-02-14 09:34:19,315", "levelname": "INFO", "name": "cloud-monitor", "message": "Task scheduler started successfully", "component": "scheduler", "timestamp": "2025.02.14 T 09:34", "level": "INFO", "correlation_id": null}
+{"asctime": "2025-02-14 10:39:56,503", "levelname": "INFO", "name": "cloud-monitor", "message": "Initializing Cloud Task Monitoring System", "startup_time": "2025.02.14 T 10:39", "timestamp": "2025.02.14 T 10:39", "level": "INFO", "logger": "cloud-monitor", "correlation_id": null, "process_id": 1, "thread_id": 140302667258752, "thread_name": "MainThread"}
+{"asctime": "2025-02-14 10:39:56,711", "levelname": "INFO", "name": "cloud-monitor", "message": "Task scheduler started successfully", "component": "scheduler", "timestamp": "2025.02.14 T 10:39", "level": "INFO", "logger": "cloud-monitor", "correlation_id": null, "process_id": 1, "thread_id": 140302619866816, "thread_name": "Thread-2"}
+{"asctime": "2025-02-14 10:55:46,727", "levelname": "INFO", "name": "cloud-monitor", "message": "Initializing Cloud Task Monitoring System", "startup_time": "2025.02.14 T 10:55", "timestamp": "2025.02.14 T 10:55", "level": "INFO", "logger": "cloud-monitor", "correlation_id": null, "process_id": 1, "thread_id": 140465967074176, "thread_name": "MainThread"}
+{"asctime": "2025-02-14 10:55:46,911", "levelname": "INFO", "name": "cloud-monitor", "message": "Task scheduler started successfully", "component": "scheduler", "timestamp": "2025.02.14 T 10:55", "level": "INFO", "logger": "cloud-monitor", "correlation_id": null, "process_id": 1, "thread_id": 140465919682240, "thread_name": "Thread-2"}
+{"asctime": "2025-02-14 12:17:19,565", "levelname": "INFO", "name": "cloud-monitor", "message": "Initializing Cloud Task Monitoring System", "startup_time": "2025.02.14 T 12:17", "timestamp": "2025.02.14 T 12:17", "level": "INFO", "logger": "cloud-monitor", "correlation_id": null, "process_id": 1, "thread_id": 140573248555904, "thread_name": "MainThread"}
+{"asctime": "2025-02-14 12:17:19,572", "levelname": "ERROR", "name": "cloud-monitor", "message": "Initialization error: name 'app' is not defined", "exc_info": "Traceback (most recent call last):\n  File \"/app/main.py\", line 61, in initialize\n    app.state.config = self.config\nNameError: name 'app' is not defined", "timestamp": "2025.02.14 T 12:17", "level": "ERROR", "logger": "cloud-monitor", "correlation_id": null, "process_id": 1, "thread_id": 140573248555904, "thread_name": "MainThread"}
+{"asctime": "2025-02-14 12:17:19,575", "levelname": "ERROR", "name": "cloud-monitor", "message": "Application error: name 'app' is not defined", "exc_info": "Traceback (most recent call last):\n  File \"/app/main.py\", line 176, in run_application\n    app_manager.initialize()\n  File \"/app/main.py\", line 61, in initialize\n    app.state.config = self.config\nNameError: name 'app' is not defined", "error_time": "2025.02.14 T 12:17", "timestamp": "2025.02.14 T 12:17", "level": "ERROR", "logger": "cloud-monitor", "correlation_id": null, "process_id": 1, "thread_id": 140573248555904, "thread_name": "MainThread"}
+{"asctime": "2025-02-14 12:17:19,579", "levelname": "INFO", "name": "cloud-monitor", "message": "Cleanup completed successfully", "shutdown_time": "2025.02.14 T 12:17", "timestamp": "2025.02.14 T 12:17", "level": "INFO", "logger": "cloud-monitor", "correlation_id": null, "process_id": 1, "thread_id": 140573248555904, "thread_name": "MainThread"}
